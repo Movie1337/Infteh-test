@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="toolbar">
+      <button id="add-folder">Создать папку</button>
+      <button id="delete-item">Удалить</button>
+      <button id="upload-file">Загрузить файл</button>
+      <button id="download-file">Скачать файл</button>
+      <button id="rename-item">Переименовать</button>
+      <input type="file" id="file-upload" multiple hidden />
+    </div>
+    <div class="container">
+      <div class="sidebar">
+        <h2>Проекты</h2>
+        <ul id="folder-structure"></ul>
+      </div>
+      <div class="main-content">
+        <div class="file-tabs" id="file-tabs"></div>
+        <textarea id="file-content" class="file-content"></textarea>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
